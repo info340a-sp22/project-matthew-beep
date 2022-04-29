@@ -15,3 +15,8 @@ img.about {
     height: 200px;
     width: auto;
 }
+
+/* Mobile Design */
+@media (max-width: 598px) {
+
+}
