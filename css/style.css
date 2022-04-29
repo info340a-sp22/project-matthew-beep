@@ -10,3 +10,8 @@ img {
 .card:hover {
     filter: drop-shadow(1px 1px 2px black)
 }
+
+img.about {
+    height: 200px;
+    width: auto;
+}
