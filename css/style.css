@@ -2,6 +2,14 @@ main .search {
     background-color: blueviolet;
 }
 
+main {
+    background-color: #f0f0f0;
+}
+
+p:nth-of-type(1) {
+    font-style: italic;
+}
+
 img {
     height: 200px;
     width: 100px;
@@ -49,5 +57,10 @@ nav li a:hover {
 
 /* Mobile Design */
 @media (max-width: 598px) {
+
+}
+
+footer {
+    background-color: #e0e0e0;
 
 }
