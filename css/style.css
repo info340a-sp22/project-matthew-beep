@@ -16,6 +16,37 @@ img.about {
     width: auto;
 }
 
+nav {
+    background-color: transparent;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+li a {
+    float: left;
+    color: #f2f2f2;
+    padding: 2px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar ul li {
+    margin-top: 2px;
+    display: inline;
+}
+
+nav li a:hover {
+    color: gold;
+    text-decoration: underline 0.15em;
+    text-underline-offset: 0.2em;
+    transition: 0.5s ease-in-out;
+}
+
 /* Mobile Design */
 @media (max-width: 598px) {
 
