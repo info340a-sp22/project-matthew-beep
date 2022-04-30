@@ -2,17 +2,26 @@ main .search {
     background-color: blueviolet;
 }
 
+div.search-bar {
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+h2 {
+    font-size: 20px;
+    font-style: italic;
+}
+
 main {
     background-color: #f0f0f0;
 }
 
-p:nth-of-type(1) {
-    font-style: italic;
-}
 
 img {
     height: 200px;
     width: 100px;
+
 }
 
 .card:hover {
@@ -22,6 +31,7 @@ img {
 img.about {
     height: 200px;
     width: auto;
+
 }
 
 nav {
@@ -32,6 +42,9 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-around;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 
@@ -55,12 +68,56 @@ nav li a:hover {
     transition: 0.5s ease-in-out;
 }
 
-/* Mobile Design */
-@media (max-width: 598px) {
+/* Medium Screen Design*/
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+    div.search-bar {
+        margin-bottom: 1em;
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+    .search {
+        background-image: url("../img/uw.jpg");
+        background-size: cover;
+    }
+    .search {
+        text-shadow: 2px 2px black;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+/* Large Screen Design*/
+@media (min-width: 992px) {
+    div.search-bar {
+        margin-bottom: 1em;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
 
 }
 
 footer {
-    background-color: #e0e0e0;
+    color: white;
+    background-color: #1b1b1b;
+    margin: 0;
+}
 
+footer a {
+    color: white;
+}
+
+div[class="row"] {
+    text-align: center;
+}
+
+#about_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
