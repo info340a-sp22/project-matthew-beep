@@ -115,3 +115,9 @@ footer a {
 div[class="row"] {
     text-align: center;
 }
+
+#about_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
