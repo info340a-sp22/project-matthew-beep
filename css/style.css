@@ -10,19 +10,18 @@ div.search-bar {
 
 h2 {
     font-size: 20px;
+    font-style: italic;
 }
 
 main {
     background-color: #f0f0f0;
 }
 
-p:nth-of-type(1) {
-    font-style: italic;
-}
 
 img {
     height: 200px;
     width: 100px;
+
 }
 
 .card:hover {
@@ -32,6 +31,7 @@ img {
 img.about {
     height: 200px;
     width: auto;
+
 }
 
 nav {
@@ -42,6 +42,9 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-around;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 
@@ -100,6 +103,15 @@ nav li a:hover {
 }
 
 footer {
-    background-color: #e0e0e0;
+    color: white;
+    background-color: #1b1b1b;
+    margin: 0;
+}
 
+footer a {
+    color: white;
+}
+
+div[class="row"] {
+    text-align: center;
 }
