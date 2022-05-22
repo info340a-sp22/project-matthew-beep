@@ -1,10 +1,13 @@
 
-import react from 'react';
+import React from 'react';
+import { NavigationBar } from './NavigationBar.js';
+
 export default App;
 
 function App(props) {
   return (
-    <div className="App">
+    <div className="App container">
+      <NavigationBar />        
     </div>
   );
 }
