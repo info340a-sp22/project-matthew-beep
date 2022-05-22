@@ -1,7 +1,7 @@
 
 export function NavigationBar(){
     return (
-        <div className="container-fluid search text-light py-5">
+        <div>
             <nav className="navbar">
                 <ul>
                     <li><a href="./index.html">Home</a></li>

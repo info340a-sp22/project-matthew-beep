@@ -6,7 +6,7 @@ export default App;
 
 function App(props) {
   return (
-    <div className="App container">
+    <div className="container-fluid search text-light py-5">
       <NavigationBar />        
     </div>
   );
