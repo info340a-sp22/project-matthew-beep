@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { NavigationBar } from './NavigationBar.js';
+import { } from './RestaurantList.js';
 
 export default App;
 
