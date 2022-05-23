@@ -1,5 +1,5 @@
 
-export function NavigationBar(){
+export function NavigationBar(props){
     return (
         <div>
             <nav className="navbar">
@@ -12,9 +12,9 @@ export function NavigationBar(){
             </nav>
                 <h1 className="text-center">HuskyEats</h1>
                 <h2 className="text-center pb-5">Find a place to eat!</h2>
-                <div className="search-bar">
+                {/* <div className="search-bar">
                     <input className="form-control" placeholder="Search for Food..." />
-                </div>
+    </div> */}
         </div>
     )
 }
