@@ -23,10 +23,17 @@ export function SearchBar(props){
     if (textContent.length > 0) {
         data = data.filter((restaraunts) => {
             console.log("checking " + restaraunts.name)
-            return (restaraunts.name.substr(0, textContent.length) === textContent);
+            const textUpper = textContent.toUpperCase();
+            const restarauntsUpper = (restaraunts.name.substr(0, textContent.length)).toUpperCase();
+            return (textUpper === restarauntsUpper);
         });
         rows = results(data);
     }
+
+    if (rows.length === 0) {
+        rows = <td>Nothing to Show!</td>;
+    }
+
     console.log("filtered: ");
     console.log(data);
     return (
@@ -41,7 +48,11 @@ export function SearchBar(props){
                     </button>
                     <div id ="results">
                         <table>
-                            {rows}
+                            <tbody>
+                                <tr>
+                                    {rows}
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -54,11 +65,7 @@ export function SearchBar(props){
 function results(data) {
     data = data.map((restaurant) => {
         let row = (
-        <div>
-            <tr>
-                <td>{restaurant.name}</td>
-            </tr>
-        </div>
+            <td key={restaurant.name} >{restaurant.name}</td>
         );
         return row;
     })

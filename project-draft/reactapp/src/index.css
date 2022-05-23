@@ -90,6 +90,12 @@ label {
     display: none;
 }
 
+td, table {
+    text-shadow: none;
+    color: black;
+    size: 20px;
+}
+
 /* Medium Screen Design*/
 @media (min-width: 768px) {
     h1 {
