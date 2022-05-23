@@ -16,7 +16,7 @@ export function RestuarantList(props) {
             <div class="row mt-5">
                 <div class="col mx-5 my-5">
                     <div class="card">
-                        <img src="img/Aladdins.jpg" class="card-img-top" alt="aladdins restaurant"/>
+                        <img src={Aladdins} class="card-img-top" alt="aladdins restaurant"/>
                         <div class="card-body">
                             <h3 class="card-title">Restaurant 1</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
@@ -27,7 +27,7 @@ export function RestuarantList(props) {
 
                 <div class="col mx-5 my-5">
                     <div class="card">
-                        <img src="img/chimac.jpg" class="card-img-top" alt="chimac korean wings"/>
+                        <img src={chimac} class="card-img-top" alt="chimac korean wings"/>
                         <div class="card-body">
                             <h3 class="card-title">Restaurant 2</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
@@ -38,7 +38,7 @@ export function RestuarantList(props) {
 
                 <div class ="col mx-5 my-5">
                     <div class="card">
-                        <img src="img/cedars.jpg" class="card-img-top" alt="cedars food"/>
+                        <img src={cedars} class="card-img-top" alt="cedars food"/>
                         <div class="card-body">
                             <h3 class="card-title">Restaurant 3</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
@@ -49,7 +49,7 @@ export function RestuarantList(props) {
 
                 <div class="col mx-5 my-5">
                     <div class="card">
-                        <img src="img/morsel.jpg" class="card-img-top" alt="morsel food"/>
+                        <img src={morsel}class="card-img-top" alt="morsel food"/>
                         <div class="card-body">
                             <h3 class="card-title">Restaurant 4</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
