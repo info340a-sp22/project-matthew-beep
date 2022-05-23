@@ -43,9 +43,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-around;
-    position: absolute;
-    right: 0;
-    top: 0;
+
 }
 
 
@@ -74,6 +72,7 @@ footer {
     color: white;
     background-color: #1b1b1b;
     margin: 0;
+    
 }
 
 footer a {
@@ -84,11 +83,13 @@ div.row {
     text-align: center;
 }
 
-#about_footer {
-    position: absolute;
-    bottom: 0;
+.about_footer {
+    position: absolute;  
     width: 100%;
+    bottom: 0;
+    left: 0;
 }
+
 
 /* Medium Screen Design*/
 @media (min-width: 768px) {
@@ -115,11 +116,15 @@ div.row {
 }
 
 /* Large Screen Design*/
-@media (min-width: 992px) and (max-width: 1019px) {
+@media (min-width: 992px) {
     div.search-bar {
         margin-bottom: 1em;
         margin-left: 5em;
         margin-right: 5em;
     }
+    .card {
+        max-width: 200px;
+    }
+
 
 }

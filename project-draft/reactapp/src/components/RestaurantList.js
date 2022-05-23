@@ -12,57 +12,55 @@ function restuarantCard(props) {
 
 export function RestuarantList(props) {
     return(
-        <div className="row mt-5">
-            
-            <div className="col mx-5 my-5">
-                <div className="card">
-                    <img src={Aladdins} className="card-img-top" alt="aladdins restaurant" />
-                    <div className="card-body">
-                        <h5 className="card-title">Restaurant 1</h5>
-                        <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
+        <section>
+            <div class="row mt-5">
+                <div class="col mx-5 my-5">
+                    <div class="card">
+                        <img src="img/Aladdins.jpg" class="card-img-top" alt="aladdins restaurant"/>
+                        <div class="card-body">
+                            <h3 class="card-title">Restaurant 1</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            
-            <div className="col mx-5 my-5">
-                <div className="card">
-                    <img src={chimac} className="card-img-top" alt="chimac korean wings" />
-                    <div className="card-body">
-                        <h5 className="card-title">Restaurant 2</h5>
-                        <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                <div class="col mx-5 my-5">
+                    <div class="card">
+                        <img src="img/chimac.jpg" class="card-img-top" alt="chimac korean wings"/>
+                        <div class="card-body">
+                            <h3 class="card-title">Restaurant 2</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            
-            <div className ="col mx-5 my-5">
-                <div className="card">
-                    <img src={cedars} className="card-img-top" alt="cedars food" />
-                    <div className="card-body">
-                        <h5 className="card-title">Restaurant 3</h5>
-                        <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                <div class ="col mx-5 my-5">
+                    <div class="card">
+                        <img src="img/cedars.jpg" class="card-img-top" alt="cedars food"/>
+                        <div class="card-body">
+                            <h3 class="card-title">Restaurant 3</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        
-            <div className="col mx-5 my-5">
-                <div className="card">
-                    <img src={morsel} className="card-img-top" alt="morsel food" />
-                    <div className="card-body">
-                        <h5 className="card-title">Restaurant 4</h5>
-                        <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                <div class="col mx-5 my-5">
+                    <div class="card">
+                        <img src="img/morsel.jpg" class="card-img-top" alt="morsel food"/>
+                        <div class="card-body">
+                            <h3 class="card-title">Restaurant 4</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
+                
 
-        
-        </div>
+                
+            </div>
+            </section>
     )
 }
