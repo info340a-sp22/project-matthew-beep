@@ -3,9 +3,7 @@ main .search {
 }
 
 div.search-bar {
-    margin-bottom: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin:0;
 }
 
 h2 {
@@ -33,6 +31,12 @@ img.about {
     width: auto;
 
 }
+
+input.form-control {
+    display:inline;
+    width:80%;
+}
+
 
 nav {
     background-color: transparent;
@@ -68,15 +72,30 @@ nav li a:hover {
     transition: 0.5s ease-in-out;
 }
 
+div.jumbotron{
+    padding: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 20px;
+    background: rgb(255,255,255,0.6);
+}
+
+div.container {
+    margin:0;
+    max-width: 1500px;
+
+}
+
+label {
+    display: none;
+}
+
 /* Medium Screen Design*/
 @media (min-width: 768px) {
     h1 {
         font-size: 4em;
     }
     div.search-bar {
-        margin-bottom: 1em;
-        margin-left: 4em;
-        margin-right: 4em;
     }
     .search {
         background-image: url("../img/uw.jpg");
@@ -95,9 +114,6 @@ nav li a:hover {
 /* Large Screen Design*/
 @media (min-width: 992px) {
     div.search-bar {
-        margin-bottom: 1em;
-        margin-left: 5em;
-        margin-right: 5em;
     }
 
 }
