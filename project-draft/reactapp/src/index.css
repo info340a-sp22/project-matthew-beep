@@ -1,4 +1,4 @@
-main .search {
+main.search {
     background-color: blueviolet;
 }
 
@@ -151,4 +151,16 @@ div.row {
 
 
 
+}
+
+@media (max-width: 767px) {
+
+    div.container-fluids div.row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.container-fluids div.row div.col img {
+        padding: 5rem;
+    }
 }
