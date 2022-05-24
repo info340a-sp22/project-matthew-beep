@@ -84,10 +84,11 @@ div.row {
 }
 
 .about_footer {
-    position: absolute;  
+    position: relative;  
     width: 100%;
     bottom: 0;
     left: 0;
+    box-shadow: 0 20vh 0 20vh #1b1b1b;
 }
 
 
@@ -126,5 +127,21 @@ div.row {
         max-width: 200px;
     }
 
+
+}
+
+@media (max-width: 767px) {
+
+    div.container-fluids div.row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.container-fluids div.row div.col img {
+        padding: 5rem;
+    }
+
+    .about_footer {
+    }
 
 }
