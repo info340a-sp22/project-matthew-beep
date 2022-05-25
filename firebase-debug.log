@@ -1,0 +1,35 @@
+[debug] [2022-05-24T03:33:36.457Z] ----------------------------------------------------------------------
+[debug] [2022-05-24T03:33:36.459Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vicam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-05-24T03:33:36.459Z] CLI Version:   11.0.0
+[debug] [2022-05-24T03:33:36.459Z] Platform:      win32
+[debug] [2022-05-24T03:33:36.459Z] Node Version:  v16.14.0
+[debug] [2022-05-24T03:33:36.460Z] Time:          Mon May 23 2022 20:33:36 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-05-24T03:33:36.460Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-24T03:33:36.467Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-24T03:33:36.467Z] > authorizing via signed-in user (murphyv@uw.edu)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\vicam\Documents\INFO340\project-matthew-beep
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

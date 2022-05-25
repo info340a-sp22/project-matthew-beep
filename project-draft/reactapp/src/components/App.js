@@ -11,7 +11,7 @@ export default App;
 
 function App(props) {
   return (
-    <div className="container-fluid search text-light py-5">
+    <div className="container-fluid search text-light px-0 pt-5">
       <NavigationBar />
       <SearchBar data = {data}/>        
       <RestuarantList />

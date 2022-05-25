@@ -14,7 +14,7 @@ export function RestuarantList(props) {
     return(
         <section>
             <div class="row mt-5">
-                <div class="col mx-5 my-5">
+                <div class="col ml-5 pl-5 my-5">
                     <div class="card">
                         <img src={Aladdins} class="card-img-top" alt="aladdins restaurant"/>
                         <div class="card-body">
@@ -25,7 +25,7 @@ export function RestuarantList(props) {
                     </div>
                 </div>
 
-                <div class="col mx-5 my-5">
+                <div class="col my-5">
                     <div class="card">
                         <img src={chimac} class="card-img-top" alt="chimac korean wings"/>
                         <div class="card-body">
@@ -36,7 +36,7 @@ export function RestuarantList(props) {
                     </div>
                 </div>
 
-                <div class ="col mx-5 my-5">
+                <div class ="col my-5">
                     <div class="card">
                         <img src={cedars} class="card-img-top" alt="cedars food"/>
                         <div class="card-body">
@@ -47,7 +47,7 @@ export function RestuarantList(props) {
                     </div>
                 </div>
 
-                <div class="col mx-5 my-5">
+                <div class="col my-5">
                     <div class="card">
                         <img src={morsel}class="card-img-top" alt="morsel food"/>
                         <div class="card-body">

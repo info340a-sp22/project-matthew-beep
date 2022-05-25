@@ -23,7 +23,7 @@ img {
 }
 
 .card:hover {
-    filter: drop-shadow(1px 1px 2px black)
+    filter: drop-shadow(1px 1px 2px black);
 }
 
 img.about {
@@ -117,6 +117,29 @@ div.row {
     left:0;
 }
 
+.card,.card-img-top {
+    border-radius: 15px;
+    margin:0;
+}
+
+div.card {
+    margin:0;
+}
+
+h3 {
+    color:black;
+    text-shadow: none;
+}
+
+h3:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: black;
+    text-shadow: none;
+}
+
 /* Medium Screen Design*/
 @media (min-width: 768px) {
     h1 {
@@ -128,12 +151,20 @@ div.row {
         background-image: url("../img/uw.jpg");
         background-size: cover;
     }
-    .search {
+    li {
+        text-shadow: 2px 1px black;
+    }
+
+    h1, h2 {
         text-shadow: 2px 2px black;
     }
-    nav {
+
+    .navbar {
         display: flex;
-        justify-content: flex-end;
+        align-content: flex-end;
+        flex-direction: column;
+        margin-right: 3em;
+
     }
 
 }
@@ -146,7 +177,7 @@ div.row {
         margin-right: 5em;
     }
     .card {
-        max-width: 200px;
+        max-width: 250px;
     }
 
 
