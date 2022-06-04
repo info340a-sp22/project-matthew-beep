@@ -1,5 +1,5 @@
 [
-    {"name":"Just Burgers", "address": "4510 University Way NE, Seattle, WA 98105", "img": "./img/Just-Burgers.jpeg", "type": "burger"},
+    {"name":"Just Burgers", "address": "4510 University Way NE, Seattle, WA 98105", "img": "./img/Just-Burgers.jpeg", "type": "burger", "description": "Busy location serving New American diner fare featuring burgers, shakes & sweet-potato fries."},
     {"name":"BB's Teriyaki Grill", "address": "4221 University Way NE, Seattle, WA 98105", "img": "./img/BB.jpeg", "type": "asian"},
     {"name":"Cafe On The Ave", "address": "4201 University Way NE, Seattle, WA 98105", "img": "./img/Cafe-Ave.jpeg", "type": "cafe"},
     {"name":"Aladdin's", "address": "4222 University Way NE, Seattle, WA 98105", "img": "./img/Aladdins.jpg", "type": "mediterranean"},

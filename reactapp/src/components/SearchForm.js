@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from 'react-router-dom';
 
 
 export function SearchBar(props){
@@ -65,7 +66,9 @@ export function SearchBar(props){
 function results(data) {
     data = data.map((restaurant) => {
         let row = (
-            <td key={restaurant.name} >{restaurant.name}</td>
+            <td key={restaurant.name} >
+                <Link to={"about/"+restaurant.name}>{restaurant.name}</Link>
+            </td>
         );
         return row;
     })
