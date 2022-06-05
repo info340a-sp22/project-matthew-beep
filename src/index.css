@@ -182,7 +182,7 @@ p {
 
 }
 
-@media (max-width: 767px) {
+@media (min-width: 500px) {
 
     div.container-fluids div.row {
         display: flex;

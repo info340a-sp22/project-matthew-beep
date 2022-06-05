@@ -130,7 +130,7 @@ div.row {
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
 
     div.container-fluids div.row {
         display: flex;
@@ -139,9 +139,6 @@ div.row {
 
     div.container-fluids div.row div.col img {
         padding: 5rem;
-    }
-
-    .about_footer {
     }
 
 }
