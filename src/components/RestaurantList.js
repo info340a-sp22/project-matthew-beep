@@ -13,7 +13,7 @@ function restuarantCard(data) {
         return (
             <div class="col ml-5 pl-5 my-5">
                 <div className="card">
-                    <img src={element.img} className="card-img-top" alt={element.name + "restaurant"}/>
+                    <img src={require(element.img)} className="card-img-top" alt={element.name + "restaurant"}/>
                     <div className="card-body">
                         <h3 className="card-title">{element.name}</h3>
                         <p className="card-text">{element.description}</p>
