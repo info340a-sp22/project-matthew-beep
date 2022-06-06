@@ -6,6 +6,7 @@ export function RestaurantDetail() {
 
     // Use lodash here to filter by the restaurant name param to include details
     console.log(urlParams);
+    console.log(urlParams.restaurantName);
 
     return(
         <h2> Description of restaurant </h2>

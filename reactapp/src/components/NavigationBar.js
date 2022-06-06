@@ -1,13 +1,14 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export function NavigationBar(props){
     return (
         <div>
             <nav className="navbar">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="./about.html">About</a></li>
+                    <li><NavLink to ="/featured">Home</NavLink></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                    <li><NavLink to="/about">About</NavLink></li>
                 </ul>
             </nav>
                 <h1 className="text-center">HuskyEats</h1>
