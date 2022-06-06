@@ -29,6 +29,3 @@ export function FavoriteRestaurant(props) {
 
 }
 
-function addFavorite() {
-
-}
