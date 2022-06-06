@@ -15,11 +15,13 @@ export function FavoriteRestaurant(props) {
                 {fav}
             </ul>
             <div className="form-group">
-                <button type="button" id="add-task-button" className="btn btn-primary">
-                    <NavLink to={"/about"}>
+                <NavLink to={"/about"}>
+                    <button type="button" id="add-task-button" className="btn btn-primary">
+                    
                         Add Restaurants
-                    </NavLink>
-                </button>
+                    
+                    </button>
+                </NavLink>
             </div>
             <Outlet />
         </div>

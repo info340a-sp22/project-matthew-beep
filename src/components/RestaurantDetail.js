@@ -11,10 +11,6 @@ export function RestaurantDetail(props) {
     const urlParams = useParams();
     
     // Use lodash here to filter by the restaurant name param to include details
-    //console.log(urlParams);
-    //console.log(urlParams.restaurantName);
-    console.log(data);
-
     const database = getDatabase();
     let restaurant =  _.find(data, {name: urlParams.restaurantName});
     console.log(restaurant);
