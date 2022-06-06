@@ -56,7 +56,8 @@ function App(props) {
       <NavigationBar />
       <SearchBar data = {data}/>
       <Routes>
-        <Route path="featured" element={<RestuarantList data = {data}/>} />
+        <Route path="featured" element={<RestuarantList data = {data}/>}/>
+
         <Route path="add" element={<AddPage submit={addRestaurant}/>}/>
         <Route path="favorite" element={<FavoriteRestaurant data={data}/>} />
         <Route path="about" element={<RestaurantPage />}>

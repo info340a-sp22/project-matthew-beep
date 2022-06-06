@@ -1,6 +1,6 @@
 import { favArray } from './RestaurantDetail';
 import { Outlet } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export function FavoriteRestaurant(props) {
     let list = favArray;
@@ -15,13 +15,13 @@ export function FavoriteRestaurant(props) {
                 {fav}
             </ul>
             <div className="form-group">
-                <NavLink to={"/about"}>
+                <Link to={"/featured"}>
                     <button type="button" id="add-task-button" className="btn btn-primary">
                     
                         Add Restaurants
                     
                     </button>
-                </NavLink>
+                </Link>
             </div>
             <Outlet />
         </div>

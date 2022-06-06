@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 // gonna need data first
@@ -8,6 +9,8 @@ function restuarantCard(data) {
         console.log(element.img);
         //const img = require(element.img);
         //const test = element.img;
+        let link = "/about/" + element.name;
+
         return (
             <div class="col ml-5 pl-5 my-5">
                 <div className="card">
@@ -15,7 +18,11 @@ function restuarantCard(data) {
                     <div className="card-body">
                         <h3 className="card-title">{element.name}</h3>
                         <p className="card-text">{element.description}</p>
-                        <a href="#" className="btn btn-primary">Learn More</a>
+                        <Link to={link}>
+                            <button type="button" id="add-fav-button" className="btn btn-primary">
+                                Learn more
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
