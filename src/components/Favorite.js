@@ -6,6 +6,7 @@ export function FavoriteRestaurant(props) {
     const fav = list.map((element) => {
         return <li>{element.name}</li>
     });
+    
     return(
         <div>
             <h2>Featured Page</h2>
