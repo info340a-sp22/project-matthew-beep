@@ -35,8 +35,7 @@ export function SearchBar(props){
         rows = <td>Nothing to Show!</td>;
     }
 
-    console.log("filtered: ");
-    console.log(data);
+ 
     return (
         <div className="jumbotron">
             <div className='container'>
