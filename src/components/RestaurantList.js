@@ -1,8 +1,4 @@
 import React from 'react';
-import Aladdins from './img/Aladdins.jpg';
-import chimac from './img/chimac.jpg';
-import cedars from './img/cedars.jpg';
-import morsel from './img/morsel.jpg';
 
 
 // gonna need data first
