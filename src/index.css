@@ -145,10 +145,8 @@ p {
     h1 {
         font-size: 4em;
     }
-    div.search-bar {
-    }
     .search {
-        background-image: url("../img/uw.jpg");
+        background-image: url("./img/uw.jpg");
         background-size: cover;
     }
     li {

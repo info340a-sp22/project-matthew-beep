@@ -9,6 +9,7 @@ import RestaurantPage from './About.js';
 import { RestaurantDetail } from './RestaurantDetail.js';
 import { Routes, Route } from 'react-router-dom';
 import { Navigate } from "react-router-dom";
+import { AddPage } from './AddRestaurant.js';
 //import restaurant from './data/restaraunts.json';
 
 export default App;
@@ -20,6 +21,7 @@ function App(props) {
       <SearchBar data = {data}/>
       <Routes>
         <Route path="featured" element={<RestuarantList />} />
+        <Route path="add" element={<AddPage />}/>
         <Route path="about" element={<RestaurantPage />}>
           <Route path=":restaurantName" element={<RestaurantDetail />}/>
         </Route>
