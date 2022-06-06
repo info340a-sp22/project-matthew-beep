@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavigationBar } from './NavigationBar.js';
 import { RestuarantList } from './RestaurantList.js';
 import { SearchBar } from './SearchForm.js';
@@ -11,13 +11,14 @@ import { Routes, Route } from 'react-router-dom';
 import { Navigate } from "react-router-dom";
 import { AddPage } from './AddRestaurant.js';
 import { FavoriteRestaurant } from './Favorite.js';
-import restaurant from './data/restaraunts.json';
+
+import { getDatabase, ref, set, onValue, push } from 'firebase/database';
 
 export default App;
 
 function App(props) {
 
-  const [restaurantArray, setRestaurantArray] = useState(restaurant);
+  const [restaurantArray, setRestaurantArray] = useState([]);
 
   const addRestaurant = (name, address, type, description) => {
     const newRestaurant = {
@@ -27,10 +28,28 @@ function App(props) {
       description : description
     }
 
-    const newRestaurantArray = [...restaurantArray, newRestaurant];
-    setRestaurantArray (newRestaurantArray);
+    const database = getDatabase();
+    const allRestaurantRef = ref(database, "allRestaurants");
+    push(allRestaurantRef, newRestaurant)
     
   } 
+
+  useEffect (() => {
+
+    const database = getDatabase();
+    const restaurantRef = ref(database, "restaurant");
+
+    onValue(restaurantRef, (snapshot) => {
+      const newVal = snapshot.val();
+
+     if (newVal != null) {
+       setRestaurantArray([newVal])
+     }
+    })
+
+
+  }, [])
+
 
   return (
     <div className="container-fluid search text-light px-0 pt-5">
@@ -38,7 +57,7 @@ function App(props) {
       <SearchBar data = {data}/>
       <Routes>
         <Route path="featured" element={<RestuarantList />} />
-        <Route path="add" element={<AddPage />}/>
+        <Route path="add" element={<AddPage submit={addRestaurant}/>}/>
         <Route path="favorite" element={<FavoriteRestaurant data={data}/>} />
         <Route path="about" element={<RestaurantPage />}>
           <Route path=":restaurantName" element={<RestaurantDetail />}/>
