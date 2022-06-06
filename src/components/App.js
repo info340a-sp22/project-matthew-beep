@@ -61,7 +61,7 @@ function App(props) {
         <Route path="favorite" element={<FavoriteRestaurant data={data}/>} />
         <Route path="about" element={<RestaurantPage />}>
           <Route path=":restaurantName" element={<RestaurantDetail />}/>
-        <Route path="favorite" element={<FavoriteRestaurant />} />
+          <Route path="favorite" element={<FavoriteRestaurant />} />
         </Route>
         <Route path="*" element={<Navigate to="/featured" />}/>
       </Routes>
