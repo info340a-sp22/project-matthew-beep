@@ -10,10 +10,12 @@ function restuarantCard(data) {
     let list = [...data];
     const featured = list.slice(0, 4).map((element) => {
         console.log(element.img);
+        //const img = require(element.img);
+        //const test = element.img;
         return (
             <div class="col ml-5 pl-5 my-5">
                 <div className="card">
-                    <img src={require(element.img)} className="card-img-top" alt={element.name + "restaurant"}/>
+                    <img src={require('../img/' + element.img)} className="card-img-top" alt={element.name + "restaurant"}/>
                     <div className="card-body">
                         <h3 className="card-title">{element.name}</h3>
                         <p className="card-text">{element.description}</p>
