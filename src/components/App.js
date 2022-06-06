@@ -23,6 +23,7 @@ function App(props) {
       <Routes>
         <Route path="featured" element={<RestuarantList />} />
         <Route path="add" element={<AddPage />}/>
+        <Route path="favorite" element={<FavoriteRestaurant />} />
         <Route path="about" element={<RestaurantPage />}>
           <Route path=":restaurantName" element={<RestaurantDetail />}/>
         <Route path="favorite" element={<FavoriteRestaurant />} />
