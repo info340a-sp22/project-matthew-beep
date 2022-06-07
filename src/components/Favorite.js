@@ -9,22 +9,24 @@ export function FavoriteRestaurant(props) {
     });
     
     return(
-        <div>
-            <h2>Featured Page</h2>
-            <ul>
-                {fav}
-            </ul>
-            <div className="form-group">
-                <Link to={"/featured"}>
-                    <button type="button" id="add-task-button" className="btn btn-primary">
-                    
-                        Add Restaurants
-                    
-                    </button>
-                </Link>
+        <main>
+            <div>
+                <h2>Your Favorite Restaurants</h2>
+                <ul>
+                    {fav}
+                </ul>
+                <div className="form-group">
+                    <Link to={"/featured"}>
+                        <button type="button" id="add-task-button" className="btn btn-primary">
+                        
+                            Add Restaurants
+                        
+                        </button>
+                    </Link>
+                </div>
+                <Outlet />
             </div>
-            <Outlet />
-        </div>
+        </main>
     )
 
 }

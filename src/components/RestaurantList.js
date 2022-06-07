@@ -44,7 +44,7 @@ export function RestuarantList(props) {
                 {cards}
                 
             </div>
-            </section>
+        </section>
     )
 }
 

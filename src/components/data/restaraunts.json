@@ -1,6 +1,6 @@
 [
     {"name":"Just Burgers", "address": "4510 University Way NE, Seattle, WA 98105", "img": "Just-Burgers.jpg", "type": "burger", "description": "Busy location serving New American diner fare featuring burgers, shakes & sweet-potato fries."},
-    {"name":"BB's Teriyaki Grill", "address": "4221 University Way NE, Seattle, WA 98105", "img": "BB.jpg", "type": "asian", "description": "A build-you-own plate location on the Ave focused on teriyaki and Asian cuisine."},
+    {"name":"BB's Teriyaki Grill", "address": "4221 University Way NE, Seattle, WA 98105", "img": "BB.jpg", "type": "asian", "description": "A build-your-own plate location on the Ave focused on teriyaki and Asian cuisine."},
     {"name":"Cafe On The Ave", "address": "4201 University Way NE, Seattle, WA 98105", "img": "Cafe-Ave.jpg", "type": "cafe", "description": "Coffeehouse with a big American menu of breakfast staples & sandwiches in comfy digs with free WiFi."},
     {"name":"Aladdin's", "address": "4222 University Way NE, Seattle, WA 98105", "img": "Aladdins.jpg", "type": "mediterranean", "description":"No-frills Mediterranean staple for hearty gyros, falafel & shawarma, plus Turkish coffee."},
     {"name":"Pho Shizzle", "address": "4235 University Way NE, Seattle, WA 98105", "img": "pho-shizzle.jpg", "type": "vietnamese", "description":"Pho, banh mi & other Vietnamese staples in a simple storefront with a neon-accented dining room."}

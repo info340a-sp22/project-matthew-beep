@@ -27,7 +27,6 @@ function App(props) {
       type : type,
       description : description,
       img : "default"
-      
     }
 
     const database = getDatabase();
@@ -56,15 +55,14 @@ function App(props) {
 
 
   }, [])
-
-
+  console.log("new array");
+  console.log(restaurantArray);
   return (
     <div className="container-fluid search text-light px-0 pt-5">
       <NavigationBar />
       <SearchBar data = {data}/>
       <Routes>
         <Route path="featured" element={<RestuarantList data = {data}/>}/>
-
         <Route path="add" element={<AddPage submit={addRestaurant}/>}/>
         <Route path="favorite" element={<FavoriteRestaurant data={data}/>} />
         <Route path="about" element={<RestaurantPage />}>
