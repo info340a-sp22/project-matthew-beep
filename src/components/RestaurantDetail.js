@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import _ from 'lodash';
 import data from './data/restaraunts.json';
 import { getDatabase, ref, set } from 'firebase/database';
-
+import Button from 'react-bootstrap/Button';
 
 export let favArray = [];
 
@@ -25,9 +25,9 @@ export function RestaurantDetail(props) {
                 <h2>{restaurant.name}</h2>
                 <p>{restaurant.description}</p>
                 <div className="form-group">
-                    <button type="button" id="add-fav-button" className="btn btn-primary" onClick={handleClick}>
+                    <Button type="button" id="add-fav-button" className="btn btn-primary" onClick={handleClick}>
                         Add to favorites
-                    </button>
+                    </Button>
                 </div>
             </div>
         </main>
