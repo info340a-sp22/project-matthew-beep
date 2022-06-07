@@ -20,7 +20,7 @@ export function RestaurantDetail(props) {
     }
 
     return(
-        <main id='details'>
+        <main>
             <div>
                 <h2>{restaurant.name}</h2>
                 <p>{restaurant.description}</p>

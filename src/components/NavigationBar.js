@@ -8,7 +8,6 @@ export function NavigationBar(props){
                 <ul>
                     <li><NavLink to ="/featured">Home</NavLink></li>
                     <li><NavLink to ="/favorite">Favorites</NavLink></li>
-                    <li><NavLink to="/about">About</NavLink></li>
                     <li><NavLink to="/add">Add Restaurants</NavLink></li>
                 </ul>
             </nav>
