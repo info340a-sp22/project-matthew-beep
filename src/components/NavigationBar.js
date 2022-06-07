@@ -11,8 +11,10 @@ export function NavigationBar(props){
                     <li><NavLink to="/add">Add Restaurants</NavLink></li>
                 </ul>
             </nav>
+                <div className="miniJumbo">
                 <h1 className="text-center">HuskyEats</h1>
                 <h2 className="text-center pb-5">Find a place to eat!</h2>
+                </div>
         </div>
     )
 }

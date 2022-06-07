@@ -41,7 +41,7 @@ export function SearchBar(props){
             <div className='container'>
             <form onSubmit={handleSubmit} className='form'>
                 <div className="search-bar">
-                    <label htmlFor='.form-control'>Search</label>
+                    <label htmlFor='.form-control' className="labels">Search</label>
                     <input className="form-control" placeholder="Search for Food..." value={textContent} onChange={handleChange}/>
                     <button className='btn btn-secondary' type='submit'>
                     Search!

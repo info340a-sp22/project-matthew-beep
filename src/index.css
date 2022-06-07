@@ -77,6 +77,14 @@ div.jumbotron{
     background: rgb(255,255,255,0.6);
 }
 
+.miniJumbo {
+    margin-left: 30em;
+    margin-right: 30em;
+    padding-top: 2rem;
+    border-radius: 20px;
+    background: rgb(255,255,255,0.6);
+}
+
 div.container {
     margin:0;
     max-width: 1500px;
@@ -153,6 +161,10 @@ p {
     padding: 1rem;
 }
 
+.labels {
+    display: none;
+}
+
 
 /* Medium Screen Design*/
 @media (min-width: 768px) {
@@ -168,7 +180,7 @@ p {
     }
 
     h1, h2 {
-        text-shadow: 2px 2px black;
+        color:black;
     }
 
     .jumbotron h2{
