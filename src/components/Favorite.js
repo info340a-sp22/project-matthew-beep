@@ -11,13 +11,13 @@ export function FavoriteRestaurant(props) {
     return(
         <main>
             <div>
-                <h2>Your Favorite Restaurants</h2>
+                <h2 className='subheaders'>Your Favorite Restaurants</h2>
                 <ul>
                     {fav}
                 </ul>
                 <div className="form-group">
                     <Link to={"/featured"}>
-                        <button type="button" id="add-task-button" className="btn btn-primary">
+                        <button type="button" id="add-task-button" className="btn btn-primary m-4">
                             Add Restaurants
                         </button>
                     </Link>

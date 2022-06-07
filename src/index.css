@@ -140,6 +140,19 @@ p {
     text-shadow: none;
 }
 
+.AboutPic {
+    height: 200px;
+    width:auto;
+    margin: 2rem;
+    border-radius: 15px;
+}
+
+.subheaders {
+    color: black;
+    text-shadow: none;
+    padding: 1rem;
+}
+
 
 /* Medium Screen Design*/
 @media (min-width: 768px) {

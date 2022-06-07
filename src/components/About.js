@@ -6,7 +6,7 @@ export default function AboutRestaurant(props) {
     return(
         <main>
             <div>
-                <p>Learn more about our Campus' Restaurants!</p>
+                <p className='subheaders'>Learn more about our Campus' Restaurants!</p>
                 <Outlet />
             </div>
         </main>
