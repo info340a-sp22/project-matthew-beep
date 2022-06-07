@@ -10,6 +10,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Navigate } from "react-router-dom";
 import { AddPage } from './AddRestaurant.js';
 import { FavoriteRestaurant } from './Favorite.js';
+import Button from 'react-bootstrap/Button';
 
 import { getDatabase, ref, onValue, push } from 'firebase/database';
 

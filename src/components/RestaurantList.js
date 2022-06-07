@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Button from 'react-bootstrap/Button';
 
 // gonna need data first
 function restuarantCard(data) {
     let list = [...data];
     const featured = list.slice(0, 4).map((element) => {
-        console.log(element.img);
-        //const img = require(element.img);
-        //const test = element.img;
+
+
         let link = "/about/" + element.name;
 
         return (
@@ -19,9 +18,9 @@ function restuarantCard(data) {
                         <h3 className="card-title">{element.name}</h3>
                         <p className="card-text">{element.description}</p>
                         <Link to={link}>
-                            <button type="button" id="add-fav-button" className="btn btn-primary">
+                            <Button type="button" id="add-fav-button" className="btn btn-primary">
                                 Learn more
-                            </button>
+                            </Button>
                         </Link>
                     </div>
                 </div>

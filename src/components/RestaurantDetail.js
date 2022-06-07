@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import _ from 'lodash';
 import data from './data/restaraunts.json';
-
+import Button from 'react-bootstrap/Button';
 
 export let favArray = [];
 
@@ -24,9 +24,9 @@ export function RestaurantDetail(props) {
                 <p className='subheaders'>{restaurant.description}</p>
                 <img src={require('../img/' + restaurant.img)} alt={restaurant.name + "restaurant"} className="AboutPic" />
                 <div className="form-group">
-                    <button type="button" id="add-fav-button" className="btn btn-primary m-4" onClick={handleClick}>
+                    <Button type="button" id="add-fav-button" className="btn btn-primary m-4" onClick={handleClick}>
                         Add to favorites
-                    </button>
+                    </Button>
                 </div>
             </div>
         </main>
