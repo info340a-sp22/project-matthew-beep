@@ -16,20 +16,21 @@ export function RestaurantDetail(props) {
     console.log(restaurant);
 
     function handleClick(event) {
-        console.log("clicked");
         favArray.push(restaurant);
     }
 
     return(
-        <div>
-            <h2>{restaurant.name}</h2>
-            <p>{restaurant.description}</p>
-            <div className="form-group">
-                <button type="button" id="add-fav-button" className="btn btn-primary" onClick={handleClick}>
-                    Add to favorites
-                </button>
+        <main>
+            <div>
+                <h2>{restaurant.name}</h2>
+                <p>{restaurant.description}</p>
+                <div className="form-group">
+                    <button type="button" id="add-fav-button" className="btn btn-primary" onClick={handleClick}>
+                        Add to favorites
+                    </button>
+                </div>
             </div>
-        </div>
+        </main>
     )
 }
 
