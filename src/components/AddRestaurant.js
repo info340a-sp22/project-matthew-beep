@@ -41,19 +41,19 @@ export function AddPage({submit}) {
             <h2>Want to add a restaurant? Enter the details below!</h2>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="Name">What is the Name of your Restaurant?</label>
+                    <label className="labels">What is the Name of your Restaurant?</label>
                     <input className="form-control" placeholder="Name" id="Name" value={nameValue} onChange={handleChangeName} />
                 </div>
                 <div className="form-group">
-                    <label>What is the Address of your Restaurant?</label>
+                    <label className="labels">What is the Address of your Restaurant?</label>
                     <input className="form-control" placeholder="Address" value={addressValue} onChange={handleChangeAddress}/>
                 </div>
                 <div className="form-group">
-                    <label>What type of Restaurant is it</label>
+                    <label className="labels">What type of Restaurant is it</label>
                     <input className="form-control" placeholder="Type" value={typeValue} onChange={handleChangeType}/>
                 </div>
                 <div className="form-group">
-                    <label>What is a description of the Restaurant?</label>
+                    <label className="labels">What is a description of the Restaurant?</label>
                     <input className="form-control" placeholder="Description" value={descriptionValue} onChange={handleChangeDesc} />
                 </div>
                 <button className='btn btn-secondary' type='submit'>Submit!</button>
