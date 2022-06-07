@@ -25,8 +25,8 @@ function App(props) {
       name : name,
       address : address,
       type : type,
-      description : description
-      
+      description : description,
+      img : "default"
       
     }
 

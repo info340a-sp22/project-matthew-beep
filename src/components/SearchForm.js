@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export function SearchBar(props){
     
     let data = [...props.data];
-    
+
     const [textContent, setTextContent] = useState("");
     
     let rows = <td></td>;
