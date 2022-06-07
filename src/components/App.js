@@ -26,7 +26,7 @@ function App(props) {
       address : address,
       type : type,
       description : description,
-      img : "default"
+      img : "default.jpg"
     }
 
     const database = getDatabase();
