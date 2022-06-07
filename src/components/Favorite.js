@@ -18,9 +18,7 @@ export function FavoriteRestaurant(props) {
                 <div className="form-group">
                     <Link to={"/featured"}>
                         <button type="button" id="add-task-button" className="btn btn-primary">
-                        
                             Add Restaurants
-                        
                         </button>
                     </Link>
                 </div>
