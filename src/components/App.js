@@ -26,6 +26,8 @@ function App(props) {
       address : address,
       type : type,
       description : description
+      
+      
     }
 
     const database = getDatabase();
@@ -37,14 +39,19 @@ function App(props) {
   useEffect (() => {
 
     const database = getDatabase();
-    const restaurantRef = ref(database, "restaurant");
 
-    onValue(restaurantRef, (snapshot) => {
+
+    const allRestaurantRef = ref(database, "allRestaurants");
+    onValue(allRestaurantRef, (snapshot) => {
       const newVal = snapshot.val();
+      const keys = Object.keys(newVal);
+      const newObjArray = keys.map((key) => {
+        return newVal[key]
+      })
 
-     if (newVal != null) {
-       setRestaurantArray([newVal])
-     }
+      console.log(newObjArray);
+      setRestaurantArray(newObjArray);
+
     })
 
 
