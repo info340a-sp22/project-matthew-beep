@@ -60,7 +60,7 @@ function App(props) {
   return (
     <div className="container-fluid search text-light px-0 pt-5">
       <NavigationBar />
-      <SearchBar data = {data}/>
+      <SearchBar data = {restaurantArray}/>
       <Routes>
         <Route path="featured" element={<RestuarantList data = {restaurantArray}/>}/>
         <Route path="add" element={<AddPage submit={addRestaurant}/>}/>
